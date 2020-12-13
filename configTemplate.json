@@ -1,0 +1,11 @@
+{
+  "name" : "env_sens_v1"
+  "ssid" : "Transpndr",
+  "pass" : "hwasong5",
+  "broker" : "192.168.1.70",
+  "device_token" : "YanRyI6SiyhHInNbXQDk",
+  "tx_topic" : "v1/devices/me/telemetry",
+  "rx_topic" : "v1/devices/me/rpc/request/+",
+  "dht_pin" : 5,
+  "period" : 3
+}
