@@ -15,6 +15,8 @@ client = None
 node_name = None
 
 def sensor_init():
+    global sensor
+    
     print("Initializing sensor.")
 
     pinSDA = machine.Pin(sda_pin)
@@ -93,13 +95,7 @@ print("starting the sensor")
 wifi_connect(ssid, password)
 
 # Initialize DHT sensor
-print("Initializing sensor.")
-pinSDA = machine.Pin(sda_pin)
-pinSCL = machine.Pin(scl_pin)
-
-i2c = machine.I2C(scl=pinSCL, sda=pinSDA)
-
-sensor = bme280.BME280(i2c=i2c)
+sensor_init()
 
 tim = Timer(4)
 tim.init(mode=Timer.PERIODIC, period=period*1000, callback=sensor_read)
