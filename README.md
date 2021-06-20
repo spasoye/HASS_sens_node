@@ -22,8 +22,9 @@ After installing and running *Thonny*:
 
 Modify *config.json* according to your setup. Select *boot.py*, *config.json* and *main.py* right click and *Upload to /*.
 
-
-
 ## TODO
+
+* BME/BMP280 implementation
+* Scripts for flashing
 
 [Thonny]: https://thonny.org/
