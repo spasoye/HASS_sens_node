@@ -6,6 +6,10 @@ import uos, machine
 import gc
 import webrepl
 import setup
+import sys
+
+sys.path.append('/libs')
+sys.path.append('/')
 
 conf = setup.read_config("config.json")
 print("Config JSON:",conf)
@@ -15,4 +19,6 @@ webrepl.start()
 
 gc.collect()
 
-import app
+# import app
+import app_bme
+app_bme.main()
